@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tradify.view.RegistrationOverviewController">
+   <children>
+      <TextField fx:id="regName" layoutX="55.0" layoutY="49.0" prefHeight="26.0" prefWidth="465.0" promptText="Name" />
+      <TextField fx:id="regId" layoutX="55.0" layoutY="83.0" prefHeight="26.0" prefWidth="465.0" promptText="UTDallas Email" />
+      <TextField fx:id="regAge" layoutX="55.0" layoutY="187.0" prefHeight="26.0" prefWidth="465.0" promptText="Age" />
+      <PasswordField fx:id="regPassword" layoutX="55.0" layoutY="119.0" prefHeight="26.0" prefWidth="465.0" promptText="Password" />
+      <PasswordField fx:id="regConfirmPassword" layoutX="55.0" layoutY="151.0" prefHeight="26.0" prefWidth="465.0" promptText="Confirm password" />
+      <ComboBox fx:id="regSex" layoutX="55.0" layoutY="229.0" prefWidth="150.0" promptText="Sex" />
+      <Button fx:id="regButton" layoutX="91.0" layoutY="283.0" mnemonicParsing="false" onAction="#registerUser" prefHeight="32.0" prefWidth="265.0" text="Register">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="regBackButton" layoutX="393.0" layoutY="283.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="32.0" prefWidth="127.0" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

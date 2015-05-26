@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tradify.view.LoginOverviewController">
+   <children>
+      <TextField fx:id="usernameTextField" layoutX="73.0" layoutY="38.0" prefHeight="35.0" prefWidth="412.0" promptText="UTDallas Email" />
+      <Button fx:id="loginButton" layoutX="116.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="35.0" prefWidth="139.0" text="Login">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerButton" layoutX="309.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleRegistration" prefHeight="35.0" prefWidth="139.0" text="Register">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordTextField" layoutX="73.0" layoutY="90.0" prefHeight="35.0" prefWidth="412.0" promptText="Password" />
+      <Label fx:id="forgotPassword" layoutX="383.0" layoutY="211.0" text="Forgot Password" underline="true" />
+      <ProgressIndicator fx:id="progress" layoutX="263.0" layoutY="196.0" />
+   </children>
+</AnchorPane>

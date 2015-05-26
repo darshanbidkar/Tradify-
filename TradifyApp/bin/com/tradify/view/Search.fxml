@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tradify.view.SearchController">
+   <children>
+      <SplitPane dividerPositions="0.13095238095238096" layoutX="14.0" layoutY="14.0" orientation="VERTICAL" prefHeight="506.0" prefWidth="542.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="logoutButton" layoutX="449.0" layoutY="18.0" mnemonicParsing="false" onAction="#logoutClicked" text="Logout">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="203.0" layoutY="9.0" prefHeight="44.0" prefWidth="134.0" text="Tradify!">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="postAdButton" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#postAdClicked" text="Post Ad!">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="434.0" prefWidth="504.0">
+               <children>
+                  <TextField fx:id="searchField" layoutX="44.0" layoutY="14.0" prefHeight="26.0" prefWidth="442.0" promptText="Search by title">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </TextField>
+                  <ListView fx:id="searchList" layoutX="44.0" layoutY="76.0" prefHeight="324.0" prefWidth="449.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

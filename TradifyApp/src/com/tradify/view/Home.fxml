@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tradify.view.PostAdController">
+   <children>
+      <Button fx:id="logoutButton" layoutX="490.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutClicked" text="Logout">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="200.0" layoutY="46.0" text="Post an Ad!">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="uploadButton" layoutX="242.0" layoutY="140.0" mnemonicParsing="false" onAction="#uploadPicture" text="Upload a picture" />
+      <ImageView fx:id="uploadedImage" fitHeight="195.0" fitWidth="297.0" layoutX="152.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="postDesc" layoutX="68.0" layoutY="300.0" prefHeight="100.0" prefWidth="449.0" promptText="Describe what ad!">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="427.0" text="Cost ($):">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="postCost" layoutX="138.0" layoutY="424.0" promptText="USD" />
+      <Button fx:id="postButton" layoutX="272.0" layoutY="481.0" mnemonicParsing="false" onAction="#post" text="Post!">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="30.0" layoutY="17.0" mnemonicParsing="false" onAction="#back" text="Back">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
